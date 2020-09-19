@@ -2,7 +2,7 @@
 #define __MYFN_H__
 
 #include<stdio.h>
-#incluide<conio.h>
+//#incluide<conio.h>
 #include<stdlib.h>
 
 int odd(int no);
