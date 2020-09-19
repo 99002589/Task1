@@ -109,6 +109,7 @@ int SumOfPrimes(int no)
       }
     }
   }
+  return flag;
 }
 
   int dec2bin(int no)
