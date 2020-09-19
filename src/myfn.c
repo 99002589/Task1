@@ -43,12 +43,12 @@ int symbol(int no)
 
 int palindrome(int no)
 {
-  int rev=0, tmp=0, rem=0;
+  int rev=0, tmp=0,rem=0;
   tmp=no;
   while(tmp>0)
   {
     rem=tmp%10;
-    rev=(rev*10)+10;
+    rev=(rev*10)+rem;
     tmp=tmp/10;
   }
   if(no==rev)
@@ -122,13 +122,6 @@ int SumOfPrimes(int no)
       no=no/2;
     }
     j=i-1;
-    /*
-    for(i=i-1;i>=0;i--)
-    {
-      printf("%d",a[i]);
-    }
-    return 1;
-    */
     for(j;j>=0;--j)
     {
       val+=a[i]*(power(10,i-1));
@@ -139,7 +132,7 @@ int SumOfPrimes(int no)
   int dec2hex(int no)
   {
     char hexaDeciNum[100];
-    int i = 0,temp=0;
+    int i = 0,temp=0,val=0;
     while(no!=0)
     {
         int temp  = 0;
@@ -157,8 +150,8 @@ int SumOfPrimes(int no)
         no = no/16;
     }
     for(int j=i-1; j>=0; j--)
-        printf("%c",hexaDeciNum[j]);
-    return 1;
+      val+=a[i]*(power(10,(i-1)))
+    return val;
   }
 
   int dec2oct(int no)

@@ -14,9 +14,9 @@ int test_armstrong(int no);
 int test_fact(int no);
 int test_SumOfPrimes(int no);
 int test_dec2bin(int no);
-/*int test_dec2hex(int no);
-int test_dec2oct(int no);
-*/int test_power(int base, int a);
+int test_dec2hex(int no);
+//int dec2oct(int no);
+int test_power(int base, int a);
 int test_absolute(int no);
 
 /* Start of the application test */
@@ -41,6 +41,7 @@ int main() {
   CU_add_test(suite, "power",test_power);
   CU_add_test(suite, "absolute",test_absolute);
   CU_add_test(suite, "dec2bin",test_dec2bin);
+  CU_add_test(suite, "dec2hex",test_dec2hex);
 
 
 
@@ -109,4 +110,8 @@ int test_absolute(int no)
 int test_dec2bin(int no)
 {
   CU_ASSERT(11 == dec2bin(3));
+}
+int test_dec2hex(int no)
+{
+  CU_ASSERT(A == dec2hex(10));
 }
