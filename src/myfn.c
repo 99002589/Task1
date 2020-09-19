@@ -10,6 +10,7 @@ int odd(int no)
 
 int primeno(int no)
 {
+  int i;
   for(i=2;i<=(no/2);++i)
   {
     if(no%i==0)
@@ -52,7 +53,7 @@ int palindrome(int no)
 
 int armstrong(int no)
 {
-  int tmp=0,sum=0;
+  int tmp=0,sum=0,rem=0;
   tmp=no;
   while(tmp>0)
   {
@@ -68,8 +69,4 @@ int armstrong(int no)
   {
     return 0;
   }
-}
-
-
-
 }
