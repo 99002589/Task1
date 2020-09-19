@@ -107,8 +107,8 @@ int SumOfPrimes(int no)
     int a[10];
     for(i=0;no>0;i++)
     {
-      a[i]=n%2;
-      n=n/2;
+      a[i]=no%2;
+      no=no/2;
     }
     int val=a[i]*(pow(10,i-1));
     return val;
