@@ -78,7 +78,7 @@ int fact(int no)
   else if(no==1)
     return 1;
   else if(no>1)
-    return no*(fact(n-1));
+    return no*(fact(no-1));
   else
     return -1;
 
