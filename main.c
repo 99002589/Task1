@@ -4,7 +4,7 @@ void main()
 {
   printf("Enter a string \n");
   char str[100];
-  int i=0, factorial=0,binary=0;
+  int i=0, factorial=0,binary=0,hex=0,oct=0;
 
   do
   {
@@ -80,8 +80,19 @@ void main()
   }
 
   /* Soruce: https://www.javatpoint.com/c-program-to-convert-decimal-to-binary */
+  printf("Binary Equivalent \t");
   binary=dec2bin(no);
-  printf("Binary Equivalent = %d",binary);
+  printf("\n");
+
+  /* source: https://www.geeksforgeeks.org/program-decimal-hexadecimal-conversion */
+  printf("Hexa Decimal Equivalent \t");
+  hex=dec2hex(no);
+  printf("\n");
+
+  oct=dec2hex(no);
+  printf("Octal Equivalent \t %d \n",oct);
+
+
 
 
 

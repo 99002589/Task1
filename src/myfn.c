@@ -110,6 +110,48 @@ int SumOfPrimes(int no)
       a[i]=no%2;
       no=no/2;
     }
-    int val=a[i]*(pow(10,i-1));
-    return val;
+    for(i=i-1;i>=0;i--)
+    {
+      printf("%d",a[i]);
+    }
+    return 1;
+    //int val=a[i]*(pow(10,i-1));
+    //return val;
+  }
+
+  int dec2hex(into no)
+  {
+    char hexaDeciNum[100];
+    int i = 0,temp=0;
+    while(no!=0)
+    {
+        int temp  = 0;
+        temp = no % 16;
+        if(temp < 10)
+        {
+            hexaDeciNum[i] = temp + 48;
+            i++;
+        }
+        else
+        {
+            hexaDeciNum[i] = temp + 55;
+            i++;
+        }
+        no = no/16;
+    }
+    for(int j=i-1; j>=0; j--)
+        cout << hexaDeciNum[j];
+    return 1;
+  }
+
+  int dec2oct(int no)
+  {
+    int octalNumber = 0, i = 1;
+    while (decimalNumber != 0)
+    {
+        octalNumber += (decimalNumber % 8) * i;
+        decimalNumber /= 8;
+        i *= 10;
+    }
+    return octalNumber;
   }

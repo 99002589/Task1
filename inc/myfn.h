@@ -13,4 +13,6 @@ int armstrong(int no);
 int fact(int no);
 int SumOfPrimes(int no);
 int dec2bin(int no);
+int dec2hex(into no);
+int dec2oct(int no);
 #endif
