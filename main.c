@@ -89,6 +89,7 @@ void main()
   hex=dec2hex(no);
   printf("\n");
 
+  /* source https://www.programiz.com/c-programming/examples/octal-decimal-convert */
   oct=dec2hex(no);
   printf("Octal Equivalent \t %d \n",oct);
 
