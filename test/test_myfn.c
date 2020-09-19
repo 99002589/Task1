@@ -95,3 +95,13 @@ int test_SumOfPrimes(int no)
   CU_ASSERT(1 == SumOfPrimes(34));
   CU_ASSERT(0 == SumOfPrimes(7));
 }
+int test_power(int base, int a)
+{
+  CU_ASSERT(0 == power(0,10));
+  CU_ASSERT(1024 == power(2,10));
+}
+int test_absolute(int no)
+{
+  CU_ASSERT(5 == absolute(5));
+  CU_ASSERT(7 == absolute(-7));
+}
