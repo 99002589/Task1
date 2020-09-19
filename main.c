@@ -79,6 +79,7 @@ void main()
     printf("The number cannot be expressed as sum of 2 prime numbers \n");
   }
 
+  /* Soruce: https://www.javatpoint.com/c-program-to-convert-decimal-to-binary */
   binary=dec2bin(no);
   printf("Binary Equivalent = %d",binary);
 
