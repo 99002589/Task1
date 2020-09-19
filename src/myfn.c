@@ -144,7 +144,7 @@ int SumOfPrimes(int no)
         no = no/16;
     }
     for(int j=i-1; j>=0; j--)
-        cout << hexaDeciNum[j];
+        printf("%c",hexaDeciNum[j]);
     return 1;
   }
 
