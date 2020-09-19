@@ -15,7 +15,7 @@ int test_fact(int no);
 int test_SumOfPrimes(int no);
 int test_dec2bin(int no);
 int test_dec2hex(int no);
-int dec2oct(int no);
+int test_dec2oct(int no);
 int test_power(int base, int a);
 int test_absolute(int no);
 
@@ -42,6 +42,7 @@ int main() {
   CU_add_test(suite, "absolute",test_absolute);
   CU_add_test(suite, "dec2bin",test_dec2bin);
   CU_add_test(suite, "dec2hex",test_dec2hex);
+  CU_add_test(suite, "dec2oct",test_dec2oct);
 
 
 

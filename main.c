@@ -89,9 +89,8 @@ void main()
   hex=dec2hex(no);
   printf("\n");
 
-
   /* source https://www.programiz.com/c-programming/examples/octal-decimal-convert */
-  oct=dec2hex(no);
+  oct=dec2oct(no);
   printf("Octal Equivalent \t %d \n",oct);
 
   int expPow=power(no,10);
