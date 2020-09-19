@@ -122,11 +122,13 @@ int SumOfPrimes(int no)
       no=no/2;
     }
     j=i-1;
+    /*
     for(i=i-1;i>=0;i--)
     {
       printf("%d",a[i]);
     }
     return 1;
+    */
     for(j;j>=0;--j)
     {
       val+=a[i]*(power(10,i-1));
