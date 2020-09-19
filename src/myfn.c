@@ -103,20 +103,24 @@ int SumOfPrimes(int no)
 
   int dec2bin(int no)
   {
-    int i;
+    int i,j,val=0;
     int a[10];
     for(i=0;no>0;i++)
     {
       a[i]=no%2;
       no=no/2;
     }
+    j=i-1;
     for(i=i-1;i>=0;i--)
     {
       printf("%d",a[i]);
     }
     return 1;
-    //int val=a[i]*(pow(10,i-1));
-    //return val;
+    for(j;j>=0;--j)
+    {
+      val+=a[i]*(power(10,i-1));
+    }
+    return val;
   }
 
   int dec2hex(into no)
@@ -154,4 +158,12 @@ int SumOfPrimes(int no)
         i *= 10;
     }
     return octalNumber;
+  }
+
+  int power(int base, int a)
+  {
+    if (a != 0)
+        return (base * power(base, a - 1));
+    else
+        return 1;
   }
