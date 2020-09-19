@@ -116,7 +116,7 @@ int test_dec2hex(int no)
 {
   CU_ASSERT(1 == dec2hex(10));
 }
-int dec2oct(int no)
+int test_dec2oct(int no)
 {
   CU_ASSERT(10 == dec2oct(8));
 }
