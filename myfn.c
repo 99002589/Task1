@@ -40,9 +40,36 @@ int palindrome(int no)
     rev=(rev*10)+10;
     tmp=tmp/10;
   }
+  if(no==rev)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}
 
-  while (n != 0) {
-        remainder = n % 10;
-        reversedN = reversedN * 10 + remainder;
-        n /= 10;
+int armstrong(int no)
+{
+  int tmp=0,sum=0;
+  tmp=no;
+  while(tmp>0)
+  {
+    rem=tmp%10;
+    sum=sum+(rem*rem*rem);
+    tmp=tmp/10;
+  }
+  if(sum==no)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}
+
+
+
 }
