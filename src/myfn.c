@@ -57,8 +57,6 @@ int palindrome(int no)
     tmp=tmp/10;
     --cnt;
   }
-
-  }
   if(no==rev)
   {
     return 1;
@@ -157,7 +155,7 @@ int SumOfPrimes(int no)
         no = no/16;
     }
     for(j=i-1; j>=0; j--)
-      cout << hexaDeciNum[j];
+      printf("%c",hexaDeciNum[j]);
     return 1;
   }
 
