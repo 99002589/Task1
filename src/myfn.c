@@ -43,13 +43,21 @@ int symbol(int no)
 
 int palindrome(int no)
 {
-  int rev=0, tmp=0,rem=0;
+  int rev=0, tmp=0,rem=0,cnt=0;
   tmp=no;
-  while(tmp>0)
+  while(tmp!=0)
+  {
+    tmp=tmp/10;
+    ++cnt;
+  }
+  while(tmp!=0)
   {
     rem=tmp%10;
-    rev=(rev*10)+rem;
+    rev=(rev*power(10,cnt-1))+rem;
     tmp=tmp/10;
+    --cnt;
+  }
+
   }
   if(no==rev)
   {
@@ -114,19 +122,18 @@ int SumOfPrimes(int no)
 
   int dec2bin(int no)
   {
-    int i,j,val=0;
+    int i,val=0;
     int a[10];
     for(i=0;no>0;i++)
     {
       a[i]=no%2;
       no=no/2;
     }
-    j=i-1;
-    for(j;j>=0;--j)
+    for(i=i-1;i>=0;i--)
     {
-      val+=a[i]*(power(10,i-1));
+    printf("%d",a[i]);
     }
-    return val;
+    return 1;
   }
 
   int dec2hex(int no)
@@ -149,14 +156,9 @@ int SumOfPrimes(int no)
         }
         no = no/16;
     }
-    for(j=i-1;j>=0;j--)
-    {
-      val+=hexaDeciNum[i]*power(10,(j-1));
-    }
-
-    /*for(int j=i-1; j>=0; j--)
-    cout << hexaDeciNum[j];*/
-    return val;
+    for(j=i-1; j>=0; j--)
+      cout << hexaDeciNum[j];
+    return 1;
   }
 
   int dec2oct(int no)

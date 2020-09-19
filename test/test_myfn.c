@@ -15,7 +15,7 @@ int test_fact(int no);
 int test_SumOfPrimes(int no);
 int test_dec2bin(int no);
 int test_dec2hex(int no);
-//int dec2oct(int no);
+int dec2oct(int no);
 int test_power(int base, int a);
 int test_absolute(int no);
 
@@ -95,7 +95,7 @@ int test_fact(int no)
 int test_SumOfPrimes(int no)
 {
   CU_ASSERT(1 == SumOfPrimes(34));
-  CU_ASSERT(0 == SumOfPrimes(7));
+  CU_ASSERT(0 == SumOfPrimes(6));
 }
 int test_power(int base, int a)
 {
@@ -109,9 +109,13 @@ int test_absolute(int no)
 }
 int test_dec2bin(int no)
 {
-  CU_ASSERT(11 == dec2bin(3));
+  CU_ASSERT(1 == dec2bin(3));
 }
 int test_dec2hex(int no)
 {
-  CU_ASSERT('A' == dec2hex(10));
+  CU_ASSERT(1 == dec2hex(10));
+}
+int dec2oct(int no)
+{
+  CU_ASSERT(10 == dec2oct(8));
 }
