@@ -10,5 +10,6 @@ int primeno(int no);
 int symbol(int no);
 int palindrome(int no);
 int armstrong(int no);
+int fact(int no);
 
 #endif

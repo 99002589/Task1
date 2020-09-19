@@ -4,7 +4,7 @@ void main()
 {
   printf("Enter a string \n");
   char str[100];
-  int i=0;
+  int i=0, factorial=0;
 
   do
   {
@@ -62,6 +62,16 @@ void main()
   else
   {
     printf("Not a Palindrome Number \n");
+  }
+
+  factorial=fact(no);
+  if(factorial>0)
+  {
+    printf("The factorial for the given number is %d \n",factorial);
+  }
+  else
+  {
+    printf("The factorial for the given number is not available \n");
   }
 
 

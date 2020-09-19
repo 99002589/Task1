@@ -70,3 +70,16 @@ int armstrong(int no)
     return 0;
   }
 }
+
+int fact(int no)
+{
+  if(no==0)
+    return 1;
+  else if(no==1)
+    return 1;
+  else if(no>1)
+    return no*(fact(n-1));
+  else
+    return -1;
+
+}
