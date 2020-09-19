@@ -95,5 +95,6 @@ void main()
   int expPow=power(no,10);
   printf(" The given number raised to power of 10 is given as %d",expPow);
 
-  int abs=absolute(int no);
+  int abs=absolute(no);
   printf(" The absolute value of the given number is %d",abs);
+}
