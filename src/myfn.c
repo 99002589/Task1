@@ -90,10 +90,10 @@ int SumOfPrimes(int no)
   {
     if (primeno(i)==1)
     {
-      if (primeno(n-i)==1)
+      if (primeno(no-i)==1)
       {
         printf("The number can be expressed as sum of 2 prime numbers \t");
-        printf("%d = %d + %d \n", n, i, n - i);
+        printf("%d = %d + %d \n", no, i, no-i);
         flag=1;
         return flag;
       }
