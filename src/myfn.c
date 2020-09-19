@@ -123,7 +123,7 @@ int SumOfPrimes(int no)
     return val;
   }
 
-  int dec2hex(into no)
+  int dec2hex(int no)
   {
     char hexaDeciNum[100];
     int i = 0,temp=0;
@@ -151,10 +151,10 @@ int SumOfPrimes(int no)
   int dec2oct(int no)
   {
     int octalNumber = 0, i = 1;
-    while (decimalNumber != 0)
+    while (no != 0)
     {
-        octalNumber += (decimalNumber % 8) * i;
-        decimalNumber /= 8;
+        octalNumber += (no % 8) * i;
+        no /= 8;
         i *= 10;
     }
     return octalNumber;
