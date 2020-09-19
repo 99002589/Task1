@@ -132,7 +132,7 @@ int SumOfPrimes(int no)
   int dec2hex(int no)
   {
     char hexaDeciNum[100];
-    int i = 0,temp=0,val=0;
+    int i = 0,temp=0,val=0,j=0;
     while(no!=0)
     {
         int temp  = 0;
@@ -149,8 +149,13 @@ int SumOfPrimes(int no)
         }
         no = no/16;
     }
-    for(int j=i-1; j>=0; j--)
-      val+=hexaDeciNum[i]*(power(10,(i-1)))
+    for(j=i-1;j>=0;j--)
+    {
+      val+=hexaDeciNum[i]*power(10,(j-1));
+    }
+
+    /*for(int j=i-1; j>=0; j--)
+    cout << hexaDeciNum[j];*/
     return val;
   }
 
