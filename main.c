@@ -8,8 +8,8 @@ void main()
 
   do
   {
-    scanf("%d",&str[i]);
-  }while(ch[i]!='\0');
+    scanf("%c",&str[i]);
+  }while(str[i]!='\0');
 
   printf("Enter a number \n");
   int no=0;
