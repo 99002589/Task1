@@ -113,5 +113,5 @@ int test_dec2bin(int no)
 }
 int test_dec2hex(int no)
 {
-  CU_ASSERT(A == dec2hex(10));
+  CU_ASSERT('A' == dec2hex(10));
 }

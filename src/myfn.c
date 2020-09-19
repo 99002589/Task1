@@ -150,7 +150,7 @@ int SumOfPrimes(int no)
         no = no/16;
     }
     for(int j=i-1; j>=0; j--)
-      val+=a[i]*(power(10,(i-1)))
+      val+=hexaDeciNum[i]*(power(10,(i-1)))
     return val;
   }
 
