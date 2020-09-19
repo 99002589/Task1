@@ -99,3 +99,17 @@ int SumOfPrimes(int no)
       }
     }
   }
+}
+
+  int dec2bin(int no)
+  {
+    int i;
+    int a[10];
+    for(i=0;no>0;i++)
+    {
+      a[i]=n%2;
+      n=n/2;
+    }
+    int val=a[i]*(pow(10,i-1));
+    return val;
+  }

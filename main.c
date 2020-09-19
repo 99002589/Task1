@@ -4,7 +4,7 @@ void main()
 {
   printf("Enter a string \n");
   char str[100];
-  int i=0, factorial=0;
+  int i=0, factorial=0,binary=0;
 
   do
   {
@@ -79,6 +79,8 @@ void main()
     printf("The number cannot be expressed as sum of 2 prime numbers \n");
   }
 
+  binary=dec2bin(no);
+  printf("Binary Equivalent = %d",binary);
 
 
 
