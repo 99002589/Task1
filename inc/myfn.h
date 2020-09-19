@@ -16,4 +16,6 @@ int dec2bin(int no);
 int dec2hex(int no);
 int dec2oct(int no);
 int power(int base, int a);
+int absolute(int no);
+
 #endif

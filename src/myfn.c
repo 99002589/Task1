@@ -167,3 +167,15 @@ int SumOfPrimes(int no)
     else
         return 1;
   }
+
+  int absolute(int no)
+  {
+    if(no>=0)
+    {
+      return no;
+    }
+    else if(no<0)
+    {
+      return (no*(-1));
+    }
+  }

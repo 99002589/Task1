@@ -92,11 +92,8 @@ void main()
   oct=dec2hex(no);
   printf("Octal Equivalent \t %d \n",oct);
 
+  int expPow=power(no,10);
+  printf(" The given number raised to power of 10 is given as %d",expPow);
 
-
-
-
-
-
-
-}
+  int abs=absolute(int no);
+  printf(" The absolute value of the given number is %d",abs);
