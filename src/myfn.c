@@ -81,5 +81,21 @@ int fact(int no)
     return no*(fact(no-1));
   else
     return -1;
-
 }
+
+int SumOfPrimes(int no)
+{
+  int i=0,flag=0;
+  for(i=2;i<=no/2;++i)
+  {
+    if (primeno(i)==1)
+    {
+      if (primeno(n-i)==1)
+      {
+        printf("The number can be expressed as sum of 2 prime numbers \t");
+        printf("%d = %d + %d \n", n, i, n - i);
+        flag=1;
+        return flag;
+      }
+    }
+  }
