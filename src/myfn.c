@@ -11,14 +11,24 @@ int odd(int no)
 int primeno(int no)
 {
   int i;
-  for(i=2;i<=(no/2);++i)
+  if(no==1)
+    return 2;
+  else if(no>1)
   {
-    if(no%i==0)
+    for(i=2;i<=(no/2);++i)
     {
-      return 0;
+      if(no%i==0)
+      {
+        return 0;
+      }
     }
+    return 1;
   }
-  return 1;
+  else if(no<1)
+  {
+    return 0;
+  }
+
 }
 
 int symbol(int no)

@@ -28,7 +28,7 @@ void main()
   {
     printf("Prime Number \n");
   }
-  else
+  else if(primeno(no)==0)
   {
     printf("Composite Number \n");
   }
