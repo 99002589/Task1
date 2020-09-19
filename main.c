@@ -74,6 +74,11 @@ void main()
     printf("The factorial for the given number is not available \n");
   }
 
+  if(!SumOfPrimes(no))
+  {
+    printf("The number cannot be expressed as sum of 2 prime numbers \n");
+  }
+
 
 
 

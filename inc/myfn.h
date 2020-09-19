@@ -11,5 +11,6 @@ int symbol(int no);
 int palindrome(int no);
 int armstrong(int no);
 int fact(int no);
+int SumOfPrimes(int no);
 
 #endif
